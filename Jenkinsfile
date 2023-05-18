@@ -8,7 +8,7 @@ pipeline{
                     sh 'cd app && pip install -r requirements.txt'
                 }
                 script{
-                    sh 'cd app && python manage.py runserver 0.0.0.0:2020'
+                    sh 'cd app && python3 manage.py runserver 0.0.0.0:2020'
                 }
             }
         }
