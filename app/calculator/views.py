@@ -11,3 +11,8 @@ class CalculatorView(viewsets.ViewSet):
     def add_one_to_number(request):
         number = request.data.get('number')
         return Response({"result": number + 1})
+
+    @staticmethod
+    def add_two_to_number(request):
+        number = request.data.get('number')
+        return Response({"result": number + 2})
